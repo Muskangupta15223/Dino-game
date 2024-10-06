@@ -1,0 +1,108 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.content {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://st3.depositphotos.com/4459125/14183/v/450/depositphotos_141837812-stock-illustration-seamless-cartoon-jungle.jpg");
+  /* background-image: url("https://www.shutterstock.com/image-vector/vector-illustration-background-forest-scenery-600nw-1807427365.jpg"); */
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:bottom;
+  position: relative;
+  overflow: hidden;
+  /* display:flex; */
+  align-items: end; 
+  /* justify-content: space-around; */
+}
+.over {
+  height: 20vh;
+  width: 25vw;
+  background-color: #020416e9;
+  border: 10px solid rgb(145, 86, 14);
+  text-align: center;
+  padding-top: 2vw;
+  position: relative;
+  transform: translate(35vw, 15vw);
+  visibility: hidden;
+}
+.over h1 {
+  font-size: 3.5vw;
+  color: white;
+}
+.scorecont {
+  height: 18vh;
+  width: 15vw;
+  background-color: #000000ec;
+  border: 15px solid rgb(9, 54, 56);
+  text-align: center;
+  padding-top: 2vw;
+  position: fixed;
+  font-size: 2.1vw;
+  top: 20px;
+  color: rgb(245, 247, 249);
+}
+
+.dino {
+  height: 20vh;
+  width: 20vw;
+  /* border:12px solid red; */
+  background-image: url("dinos.png");
+  /* background-image: url("https://t4.ftcdn.net/jpg/04/50/31/17/360_F_450311715_no4pM2kTxaa64SS3ITBd4bmqHK3kPYwk.jpg"); */
+  /* background-image: url("https://i.pinimg.com/736x/c4/42/a3/c442a38e25d272298bc7f9323cb474f3.jpg"); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 10vw;
+  left: 300px;
+  z-index: 1;
+  /* mix-blend-mode: luminosity; */
+  transition:top 10s ease-in-out 12s;
+}
+.animatedino {
+  animation: dino 1.2s linear;
+}
+@keyframes dino {
+  0% {
+    bottom: 10vw;
+    
+  }
+  50% {
+    
+    top: 7.5vh;
+   
+
+    
+  }
+  100% {
+    bottom: 10vw;
+  
+
+  }
+}
+.monster {
+  background-image: url("https://cdn.pixabay.com/photo/2024/01/27/18/37/monster-8536553_1280.png");
+  /* background-image: url("https://w7.pngwing.com/pngs/990/263/png-transparent-tyrannosaurus-triceratops-dinosaur-tiranosaurio-stegosaurus-dinosaur-tyrannosaurus-terrestrial-animal-velociraptor-thumbnail.png"); */
+  height: 35vh;
+  width: 19vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left:400px;
+  bottom: 7vw;
+  z-index:1;
+  /* mix-blend-mode:multiply; */
+}
+.monsterAnime {
+  animation: monsterAnime 5s infinite linear;
+}
+@keyframes monsterAnime {
+  0% {
+    left: 100vw;
+  }
+  100% {
+    left: -20vw;
+  }
+}
